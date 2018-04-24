@@ -8,7 +8,7 @@
     "test": "./node_modules/.bin/mocha tests/**/*.spec.js --require babel-register --require ignore-styles",
     "test:watch": "npm test -- --watch",
     "test:coverage": "nyc npm test",
-    "build": "./node_modules/.bin/webpack -p"
+    "build": "./node_modules/.bin/webpack -p",
 	"go": "node server.js"
   },
   "nyc": {

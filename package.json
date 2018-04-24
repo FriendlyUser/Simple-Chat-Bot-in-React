@@ -4,11 +4,12 @@
   "description": "React Boilerplate following Airbnb's JavaScript (ES6) Style Guide.",
   "scripts": {
     "precommit": "npm test && npm run build",
-    "start": "./node_modules/.bin/webpack-dev-server --inline --content-base build/ -d && node server.js",
+    "start": "./node_modules/.bin/webpack-dev-server --inline --content-base build/ -d",
     "test": "./node_modules/.bin/mocha tests/**/*.spec.js --require babel-register --require ignore-styles",
     "test:watch": "npm test -- --watch",
     "test:coverage": "nyc npm test",
     "build": "./node_modules/.bin/webpack -p"
+	"go": "node server.js"
   },
   "nyc": {
     "reporter": [
